@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+min-height:100vh;
+overflow-x:hidden;
+text-align:center;
+color:white;
+}
+
+.login-box,.content{
+padding:30px;
+margin-top:100px;
+}
+
+input{
+padding:12px;
+border:none;
+border-radius:10px;
+width:220px;
+margin-top:10px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:10px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#e63956;
+}
+
+.content{
+display:none;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-top:30px;
+}
+
+.gallery img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.heart{
+position:fixed;
+color:red;
+font-size:25px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box" id="login">
+<h1>❤️ Secret Love Website ❤️</h1>
+<p>Enter Password</p>
+<input type="password" id="password" placeholder="Password">
+<br>
+<button onclick="checkPassword()">Open</button>
+</div>
+
+<div class="content" id="content">
+<h1>❤️ Welcome My Love ❤️</h1>
+
+<p style="font-size:22px;padding:20px;">
+Every moment with you is special.<br>
+Thank you for being part of my life. 💖
+</p>
+
+<h2>🌹 Our Beautiful Memories 🌹</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600">
+</div>
+
+<br><br>
+
+<h2>💌 A Message For You 💌</h2>
+
+<p style="max-width:700px;margin:auto;padding:20px;font-size:20px;">
+No matter where life takes us,
+you will always have a special place in my heart.
+Every smile, every memory, every moment with you
+means more than words can say. ❤️
+</p>
+
+</div>
+
+<script>
+
+function checkPassword(){
+let pass=document.getElementById("password").value;
+
+if(pass==="1310"){
+document.getElementById("login").style.display="none";
+document.getElementById("content").style.display="block";
+}
+else{
+alert("Wrong Password ❤️");
+}
+}
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
