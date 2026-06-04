@@ -1,168 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Love Story ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+        .heading {
+            font-family: 'Dancing Script', cursive;
+            color: #ff4d6d;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
 
-body{
-background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-min-height:100vh;
-overflow-x:hidden;
-text-align:center;
-color:white;
-}
+        .subheading {
+            text-align: center;
+            color: #c9184a;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
 
-.login-box,.content{
-padding:30px;
-margin-top:100px;
-}
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .photo-card {
+            background: white;
+            border: 8px solid #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            border-radius: 4px;
+            overflow: hidden;
+            width: 280px;
+        }
+        
+        .photo-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
 
-input{
-padding:12px;
-border:none;
-border-radius:10px;
-width:220px;
-margin-top:10px;
-}
-
-button{
-padding:12px 25px;
-border:none;
-border-radius:10px;
-background:#ff4d6d;
-color:white;
-cursor:pointer;
-margin-top:10px;
-}
-
-button:hover{
-background:#e63956;
-}
-
-.content{
-display:none;
-}
-
-h1{
-font-size:3rem;
-margin-bottom:10px;
-}
-
-.gallery{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
-margin-top:30px;
-}
-
-.gallery img{
-width:250px;
-height:250px;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,.3);
-}
-
-.heart{
-position:fixed;
-color:red;
-font-size:25px;
-animation:float 6s linear infinite;
-}
-
-@keyframes float{
-0%{
-transform:translateY(100vh);
-opacity:1;
-}
-100%{
-transform:translateY(-100px);
-opacity:0;
-}
-}
-</style>
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #ff4d6d;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="login-box" id="login">
-<h1>❤️ Secret Love Website ❤️</h1>
-<p>Enter Password</p>
-<input type="password" id="password" placeholder="Password">
-<br>
-<button onclick="checkPassword()">Open</button>
-</div>
+    <h1 class="heading">Our Beautiful Journey</h1>
+    <p class="subheading">Every moment with you is a favorite memory ❤️</p>
 
-<div class="content" id="content">
-<h1>❤️ Welcome My Love ❤️</h1>
+    <div class="gallery-container">
+        <div class="photo-grid">
+            
+            <!-- Photo 1 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic1.jpeg" alt="Memory 1">
+            </div>
 
-<p style="font-size:22px;padding:20px;">
-Every moment with you is special.<br>
-Thank you for being part of my life. 💖
-</p>
+            <!-- Photo 2 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic2.jpeg" alt="Memory 2">
+            </div>
 
-<h2>🌹 Our Beautiful Memories 🌹</h2>
+            <!-- Photo 3 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic3.jpeg" alt="Memory 3">
+            </div>
 
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600">
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600">
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600">
-</div>
+            <!-- Photo 4 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic4.jpeg" alt="Memory 4">
+            </div>
 
-<br><br>
+            <!-- Photo 5 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic5.jpeg" alt="Memory 5">
+            </div>
 
-<h2>💌 A Message For You 💌</h2>
+            <!-- Photo 6 (.jpeg) -->
+            <div class="photo-card">
+                <img src="pic6.jpeg" alt="Memory 6">
+            </div>
 
-<p style="max-width:700px;margin:auto;padding:20px;font-size:20px;">
-No matter where life takes us,
-you will always have a special place in my heart.
-Every smile, every memory, every moment with you
-means more than words can say. ❤️
-</p>
+        </div>
+    </div>
 
-</div>
-
-<script>
-
-function checkPassword(){
-let pass=document.getElementById("password").value;
-
-if(pass==="1310"){
-document.getElementById("login").style.display="none";
-document.getElementById("content").style.display="block";
-}
-else{
-alert("Wrong Password ❤️");
-}
-}
-
-function createHeart(){
-const heart=document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML="❤️";
-heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(20+Math.random()*30)+"px";
-
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-heart.remove();
-},6000);
-}
-
-setInterval(createHeart,400);
-
-</script>
+    <div class="footer">
+        Forever & Always ✨
+    </div>
 
 </body>
 </html>
